@@ -1,0 +1,90 @@
+/* Configuración General */
+
+:root{
+    /* variables de color */
+    --texto:#000000;
+    --textoInverso:#ffffff;
+    --colorAcento:#24975e;
+    --colorHover:#058545;
+    --fondoGeneral:#ffffff;
+    --fondoTarjeta:#ebfffe;
+    --fondoSecundario:#f0f0f0;
+
+    /* variables de fondos degradados */
+    --efectoFondo:linear-gradient(130deg, rgb(212, 212, 212) 25%, rgb(133, 240, 195) 50%, rgb(169, 216, 196) 70%);
+}
+
+*{
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    max-width: 100vw;
+    background: var(--efectoFondo);
+}
+
+/* Encabezado */
+
+header{
+    background-color: var(--fondoSecundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 80px;
+    width: 100%;
+}
+
+#logoImg{
+    width: 70px;
+    aspect-ratio: 1/1;
+}
+
+#logoText{
+    font-size: 200%;
+    text-decoration: underline;
+    text-decoration-color: var(--colorAcento);
+}
+
+/* Contenido principal */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+}
+
+#botonera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+    gap: 20px;
+}
+
+.botonUrl{
+    background-color: var(--colorAcento);
+    text-decoration: none;
+    color: var(--textoInverso);
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.botonUrl:hover, .botonUrl:active{
+    background-color: var(--colorHover);
+}
+
+/* Pié de página */
+
+footer{
+    background-color: var(--fondoSecundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+}
