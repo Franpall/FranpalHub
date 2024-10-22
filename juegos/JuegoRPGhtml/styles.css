@@ -2,8 +2,10 @@
 
 body {
   background-color: #000000;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 3rem;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   -webkit-tap-highlight-color:transparent;
 }
@@ -21,19 +23,22 @@ body {
 
 #screen{
   background-color: #17271a;
-  height: 50vh;
+  height: 60vh;
   width: 90%;
+  max-width: 800px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
-
   color: #ffffff;
-  padding: 10px;
+  padding: 5px;
   margin: 30px auto 0px; 
 }
 
 #stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 10%;
   box-sizing: border-box;
@@ -71,27 +76,26 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   margin: 20px 0;
 }
 
 .controlButton{
+  width: 80%;
+  max-width: 500px;
   cursor: pointer;
   color: #ffffff;
-  width: 600px;
-  height: 120px;
   background-color: #fe6c32;
   background-image: linear-gradient(#d85d0b, #b4240a);
   border: 3px solid #feac32;
   padding: 5px;
   margin: 5px;
-  font-size: 2.5rem;
   font-weight: 700;
-  box-shadow: #349fb9 5px 5px;
+  box-shadow: #349fb9 1px 1px;
 }
 
 .controlButton:active{
-  box-shadow: #349fb9 -5px -5px;
+  box-shadow: #349fb9 -1px -1px;
   background-image: linear-gradient(#b4240a, #c55307);
 }
 
